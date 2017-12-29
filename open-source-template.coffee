@@ -1,7 +1,7 @@
 tmp = require 'tmp'
 {exec} = require 'child_process'
 
-templateRepo = process.env.HUBOT_GITHUB_REPO_TEMPLATE || 'https://github.com/cloud111/open-source-project-template.git'
+templateRepo = process.env.HUBOT_GITHUB_REPO_TEMPLATE || 'https://github.com/cloud111/hubot.git'
 
 init = ({user, repo, token, endpoint}, cb) ->
   tmp.dir {unsafeCleanup: true}, (err, path, cleanup) ->
